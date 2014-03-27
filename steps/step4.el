@@ -9,5 +9,6 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-;; TODO: create el-get-user/recipes
+;; TODO: create el-get-user/recipes and el-get-user/init
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(setq-default el-get-user-package-directory "~/.emacs.d/el-get-user/init")
