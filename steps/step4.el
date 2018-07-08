@@ -2,6 +2,12 @@
 
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
+;; Extra package repos
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
